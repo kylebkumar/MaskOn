@@ -16,4 +16,4 @@ Uses a nueral network that can correctly identify if a person is wearing a mask 
 
 # Data
 
-The data used to train this model can be found [here](https://drive.google.com/drive/folders/1XDte2DL2Mf_hw4NsmGst7QtYoU7sMBVG).
+The data used to train this model can be found [here](https://github.com/chandrikadeb7/Face-Mask-Detection/tree/master/dataset).
