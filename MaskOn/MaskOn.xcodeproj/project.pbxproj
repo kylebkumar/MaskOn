@@ -1,0 +1,716 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BCAA89A25D33B66006E4DF2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA89925D33B66006E4DF2 /* AppDelegate.swift */; };
+		1BCAA89C25D33B66006E4DF2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA89B25D33B66006E4DF2 /* SceneDelegate.swift */; };
+		1BCAA89E25D33B66006E4DF2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA89D25D33B66006E4DF2 /* ViewController.swift */; };
+		1BCAA8A125D33B66006E4DF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAA89F25D33B66006E4DF2 /* Main.storyboard */; };
+		1BCAA8A325D33B6D006E4DF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAA8A225D33B6D006E4DF2 /* Assets.xcassets */; };
+		1BCAA8A625D33B6D006E4DF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAA8A425D33B6D006E4DF2 /* LaunchScreen.storyboard */; };
+		1BCAA8B125D33B6F006E4DF2 /* MaskOnTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8B025D33B6F006E4DF2 /* MaskOnTests.swift */; };
+		1BCAA8BC25D33B6F006E4DF2 /* MaskOnUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8BB25D33B6F006E4DF2 /* MaskOnUITests.swift */; };
+		1BCAA8CD25D3685C006E4DF2 /* SanitizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8CC25D3685B006E4DF2 /* SanitizeViewController.swift */; };
+		1BCAA8D225D36A62006E4DF2 /* MaskCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8D125D36A62006E4DF2 /* MaskCheckViewController.swift */; };
+		1BCAA8DF25D37701006E4DF2 /* SuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8DE25D37700006E4DF2 /* SuccessViewController.swift */; };
+		1BCAA8E425D37806006E4DF2 /* CautionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8E325D37806006E4DF2 /* CautionViewController.swift */; };
+		1BCAA8E925D378A5006E4DF2 /* FailureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA8E825D378A5006E4DF2 /* FailureViewController.swift */; };
+		1BCAA96225D4868C006E4DF2 /* UIImage+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA96125D4868C006E4DF2 /* UIImage+Helper.swift */; };
+		1BCAA98025D4884D006E4DF2 /* TorchModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1BCAA97F25D4884C006E4DF2 /* TorchModule.mm */; };
+		1BCAA9A725D49F7F006E4DF2 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAA9A525D49F7F006E4DF2 /* words.txt */; };
+		1BCAA9A825D49F7F006E4DF2 /* model.pt in Resources */ = {isa = PBXBuildFile; fileRef = 1BCAA9A625D49F7F006E4DF2 /* model.pt */; };
+		5A983E8086AF3378BA2B8FF8 /* Pods_MaskOn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 166BE4225460D14077B0C5DE /* Pods_MaskOn.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BCAA8AD25D33B6F006E4DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BCAA88E25D33B66006E4DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCAA89525D33B66006E4DF2;
+			remoteInfo = MaskOn;
+		};
+		1BCAA8B825D33B6F006E4DF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1BCAA88E25D33B66006E4DF2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1BCAA89525D33B66006E4DF2;
+			remoteInfo = MaskOn;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00D7599745531BD840F7DBF1 /* Pods-MaskOn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaskOn.release.xcconfig"; path = "Target Support Files/Pods-MaskOn/Pods-MaskOn.release.xcconfig"; sourceTree = "<group>"; };
+		166BE4225460D14077B0C5DE /* Pods_MaskOn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MaskOn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCAA89625D33B66006E4DF2 /* MaskOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MaskOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCAA89925D33B66006E4DF2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1BCAA89B25D33B66006E4DF2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1BCAA89D25D33B66006E4DF2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1BCAA8A025D33B66006E4DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1BCAA8A225D33B6D006E4DF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1BCAA8A525D33B6D006E4DF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1BCAA8A725D33B6D006E4DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCAA8AC25D33B6F006E4DF2 /* MaskOnTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaskOnTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCAA8B025D33B6F006E4DF2 /* MaskOnTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskOnTests.swift; sourceTree = "<group>"; };
+		1BCAA8B225D33B6F006E4DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCAA8B725D33B6F006E4DF2 /* MaskOnUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MaskOnUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1BCAA8BB25D33B6F006E4DF2 /* MaskOnUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskOnUITests.swift; sourceTree = "<group>"; };
+		1BCAA8BD25D33B6F006E4DF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1BCAA8CC25D3685B006E4DF2 /* SanitizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SanitizeViewController.swift; sourceTree = "<group>"; };
+		1BCAA8D125D36A62006E4DF2 /* MaskCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskCheckViewController.swift; sourceTree = "<group>"; };
+		1BCAA8DE25D37700006E4DF2 /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
+		1BCAA8E325D37806006E4DF2 /* CautionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CautionViewController.swift; sourceTree = "<group>"; };
+		1BCAA8E825D378A5006E4DF2 /* FailureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureViewController.swift; sourceTree = "<group>"; };
+		1BCAA96125D4868C006E4DF2 /* UIImage+Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Helper.swift"; sourceTree = "<group>"; };
+		1BCAA96C25D48754006E4DF2 /* model.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.pt; sourceTree = "<group>"; };
+		1BCAA96D25D48754006E4DF2 /* words.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		1BCAA97D25D48843006E4DF2 /* TorchModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TorchModule.h; sourceTree = "<group>"; };
+		1BCAA97E25D4884C006E4DF2 /* MaskOn-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MaskOn-Bridging-Header.h"; sourceTree = "<group>"; };
+		1BCAA97F25D4884C006E4DF2 /* TorchModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TorchModule.mm; sourceTree = "<group>"; };
+		1BCAA9A525D49F7F006E4DF2 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		1BCAA9A625D49F7F006E4DF2 /* model.pt */ = {isa = PBXFileReference; lastKnownFileType = file; path = model.pt; sourceTree = "<group>"; };
+		A42A1E4D11CED769300E3393 /* Pods-MaskOn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MaskOn.debug.xcconfig"; path = "Target Support Files/Pods-MaskOn/Pods-MaskOn.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1BCAA89325D33B66006E4DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A983E8086AF3378BA2B8FF8 /* Pods_MaskOn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8A925D33B6F006E4DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8B425D33B6F006E4DF2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1BCAA88D25D33B66006E4DF2 = {
+			isa = PBXGroup;
+			children = (
+				1BCAA89825D33B66006E4DF2 /* MaskOn */,
+				1BCAA8AF25D33B6F006E4DF2 /* MaskOnTests */,
+				1BCAA8BA25D33B6F006E4DF2 /* MaskOnUITests */,
+				1BCAA89725D33B66006E4DF2 /* Products */,
+				EF375A30306F1109D5EACBDD /* Pods */,
+				ECA6FF30753D61302912EF0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1BCAA89725D33B66006E4DF2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1BCAA89625D33B66006E4DF2 /* MaskOn.app */,
+				1BCAA8AC25D33B6F006E4DF2 /* MaskOnTests.xctest */,
+				1BCAA8B725D33B6F006E4DF2 /* MaskOnUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1BCAA89825D33B66006E4DF2 /* MaskOn */ = {
+			isa = PBXGroup;
+			children = (
+				1BCAA89925D33B66006E4DF2 /* AppDelegate.swift */,
+				1BCAA89B25D33B66006E4DF2 /* SceneDelegate.swift */,
+				1BCAA89D25D33B66006E4DF2 /* ViewController.swift */,
+				1BCAA89F25D33B66006E4DF2 /* Main.storyboard */,
+				1BCAA8E825D378A5006E4DF2 /* FailureViewController.swift */,
+				1BCAA8E325D37806006E4DF2 /* CautionViewController.swift */,
+				1BCAA8DE25D37700006E4DF2 /* SuccessViewController.swift */,
+				1BCAA8D125D36A62006E4DF2 /* MaskCheckViewController.swift */,
+				1BCAA8CC25D3685B006E4DF2 /* SanitizeViewController.swift */,
+				1BCAA96125D4868C006E4DF2 /* UIImage+Helper.swift */,
+				1BCAA97D25D48843006E4DF2 /* TorchModule.h */,
+				1BCAA97F25D4884C006E4DF2 /* TorchModule.mm */,
+				1BCAA8A225D33B6D006E4DF2 /* Assets.xcassets */,
+				1BCAA9A625D49F7F006E4DF2 /* model.pt */,
+				1BCAA9A525D49F7F006E4DF2 /* words.txt */,
+				1BCAA96B25D48754006E4DF2 /* model */,
+				1BCAA8A425D33B6D006E4DF2 /* LaunchScreen.storyboard */,
+				1BCAA8A725D33B6D006E4DF2 /* Info.plist */,
+				1BCAA97E25D4884C006E4DF2 /* MaskOn-Bridging-Header.h */,
+			);
+			path = MaskOn;
+			sourceTree = "<group>";
+		};
+		1BCAA8AF25D33B6F006E4DF2 /* MaskOnTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BCAA8B025D33B6F006E4DF2 /* MaskOnTests.swift */,
+				1BCAA8B225D33B6F006E4DF2 /* Info.plist */,
+			);
+			path = MaskOnTests;
+			sourceTree = "<group>";
+		};
+		1BCAA8BA25D33B6F006E4DF2 /* MaskOnUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1BCAA8BB25D33B6F006E4DF2 /* MaskOnUITests.swift */,
+				1BCAA8BD25D33B6F006E4DF2 /* Info.plist */,
+			);
+			path = MaskOnUITests;
+			sourceTree = "<group>";
+		};
+		1BCAA96B25D48754006E4DF2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				1BCAA96C25D48754006E4DF2 /* model.pt */,
+				1BCAA96D25D48754006E4DF2 /* words.txt */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ECA6FF30753D61302912EF0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				166BE4225460D14077B0C5DE /* Pods_MaskOn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF375A30306F1109D5EACBDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A42A1E4D11CED769300E3393 /* Pods-MaskOn.debug.xcconfig */,
+				00D7599745531BD840F7DBF1 /* Pods-MaskOn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1BCAA89525D33B66006E4DF2 /* MaskOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCAA8C025D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOn" */;
+			buildPhases = (
+				295D58293722564882289EF8 /* [CP] Check Pods Manifest.lock */,
+				1BCAA89225D33B66006E4DF2 /* Sources */,
+				1BCAA89325D33B66006E4DF2 /* Frameworks */,
+				1BCAA89425D33B66006E4DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MaskOn;
+			productName = MaskOn;
+			productReference = 1BCAA89625D33B66006E4DF2 /* MaskOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1BCAA8AB25D33B6F006E4DF2 /* MaskOnTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCAA8C325D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOnTests" */;
+			buildPhases = (
+				1BCAA8A825D33B6F006E4DF2 /* Sources */,
+				1BCAA8A925D33B6F006E4DF2 /* Frameworks */,
+				1BCAA8AA25D33B6F006E4DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCAA8AE25D33B6F006E4DF2 /* PBXTargetDependency */,
+			);
+			name = MaskOnTests;
+			productName = MaskOnTests;
+			productReference = 1BCAA8AC25D33B6F006E4DF2 /* MaskOnTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1BCAA8B625D33B6F006E4DF2 /* MaskOnUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1BCAA8C625D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOnUITests" */;
+			buildPhases = (
+				1BCAA8B325D33B6F006E4DF2 /* Sources */,
+				1BCAA8B425D33B6F006E4DF2 /* Frameworks */,
+				1BCAA8B525D33B6F006E4DF2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1BCAA8B925D33B6F006E4DF2 /* PBXTargetDependency */,
+			);
+			name = MaskOnUITests;
+			productName = MaskOnUITests;
+			productReference = 1BCAA8B725D33B6F006E4DF2 /* MaskOnUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1BCAA88E25D33B66006E4DF2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					1BCAA89525D33B66006E4DF2 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
+					1BCAA8AB25D33B6F006E4DF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1BCAA89525D33B66006E4DF2;
+					};
+					1BCAA8B625D33B6F006E4DF2 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 1BCAA89525D33B66006E4DF2;
+					};
+				};
+			};
+			buildConfigurationList = 1BCAA89125D33B66006E4DF2 /* Build configuration list for PBXProject "MaskOn" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1BCAA88D25D33B66006E4DF2;
+			productRefGroup = 1BCAA89725D33B66006E4DF2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1BCAA89525D33B66006E4DF2 /* MaskOn */,
+				1BCAA8AB25D33B6F006E4DF2 /* MaskOnTests */,
+				1BCAA8B625D33B6F006E4DF2 /* MaskOnUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1BCAA89425D33B66006E4DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCAA8A625D33B6D006E4DF2 /* LaunchScreen.storyboard in Resources */,
+				1BCAA8A325D33B6D006E4DF2 /* Assets.xcassets in Resources */,
+				1BCAA9A725D49F7F006E4DF2 /* words.txt in Resources */,
+				1BCAA8A125D33B66006E4DF2 /* Main.storyboard in Resources */,
+				1BCAA9A825D49F7F006E4DF2 /* model.pt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8AA25D33B6F006E4DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8B525D33B6F006E4DF2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		295D58293722564882289EF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MaskOn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1BCAA89225D33B66006E4DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCAA8E425D37806006E4DF2 /* CautionViewController.swift in Sources */,
+				1BCAA8D225D36A62006E4DF2 /* MaskCheckViewController.swift in Sources */,
+				1BCAA98025D4884D006E4DF2 /* TorchModule.mm in Sources */,
+				1BCAA8DF25D37701006E4DF2 /* SuccessViewController.swift in Sources */,
+				1BCAA8E925D378A5006E4DF2 /* FailureViewController.swift in Sources */,
+				1BCAA89E25D33B66006E4DF2 /* ViewController.swift in Sources */,
+				1BCAA8CD25D3685C006E4DF2 /* SanitizeViewController.swift in Sources */,
+				1BCAA89A25D33B66006E4DF2 /* AppDelegate.swift in Sources */,
+				1BCAA96225D4868C006E4DF2 /* UIImage+Helper.swift in Sources */,
+				1BCAA89C25D33B66006E4DF2 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8A825D33B6F006E4DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCAA8B125D33B6F006E4DF2 /* MaskOnTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BCAA8B325D33B6F006E4DF2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1BCAA8BC25D33B6F006E4DF2 /* MaskOnUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1BCAA8AE25D33B6F006E4DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCAA89525D33B66006E4DF2 /* MaskOn */;
+			targetProxy = 1BCAA8AD25D33B6F006E4DF2 /* PBXContainerItemProxy */;
+		};
+		1BCAA8B925D33B6F006E4DF2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1BCAA89525D33B66006E4DF2 /* MaskOn */;
+			targetProxy = 1BCAA8B825D33B6F006E4DF2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1BCAA89F25D33B66006E4DF2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCAA8A025D33B66006E4DF2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1BCAA8A425D33B6D006E4DF2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1BCAA8A525D33B6D006E4DF2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1BCAA8BE25D33B6F006E4DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1BCAA8BF25D33B6F006E4DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1BCAA8C125D33B6F006E4DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A42A1E4D11CED769300E3393 /* Pods-MaskOn.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MaskOn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MaskOn/MaskOn-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1BCAA8C225D33B6F006E4DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00D7599745531BD840F7DBF1 /* Pods-MaskOn.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = MaskOn/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MaskOn/MaskOn-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1BCAA8C425D33B6F006E4DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = MaskOnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaskOn.app/MaskOn";
+			};
+			name = Debug;
+		};
+		1BCAA8C525D33B6F006E4DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = MaskOnTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOnTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MaskOn.app/MaskOn";
+			};
+			name = Release;
+		};
+		1BCAA8C725D33B6F006E4DF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = MaskOnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaskOn;
+			};
+			name = Debug;
+		};
+		1BCAA8C825D33B6F006E4DF2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 846P2BBS9X;
+				ENABLE_BITCODE = YES;
+				INFOPLIST_FILE = MaskOnUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = MaskOn.MaskOnUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MaskOn;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1BCAA89125D33B66006E4DF2 /* Build configuration list for PBXProject "MaskOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCAA8BE25D33B6F006E4DF2 /* Debug */,
+				1BCAA8BF25D33B6F006E4DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCAA8C025D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCAA8C125D33B6F006E4DF2 /* Debug */,
+				1BCAA8C225D33B6F006E4DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCAA8C325D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOnTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCAA8C425D33B6F006E4DF2 /* Debug */,
+				1BCAA8C525D33B6F006E4DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1BCAA8C625D33B6F006E4DF2 /* Build configuration list for PBXNativeTarget "MaskOnUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BCAA8C725D33B6F006E4DF2 /* Debug */,
+				1BCAA8C825D33B6F006E4DF2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1BCAA88E25D33B66006E4DF2 /* Project object */;
+}
